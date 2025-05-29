@@ -199,7 +199,40 @@
         transform: translateX(-100%);
       }
     }
+    
+    .curve-container {
+  position: relative;
+  background-color: #1d1b35; /* Your dark blue color */
+  overflow: hidden;
+}
 
-.brand-logo {
-      max-height: 72px;
+.curve-left,
+.curve-right {
+  position: absolute;
+  top: 0;
+  height: 200%; /* Zoom as needed */
+  z-index: 1;
+}
+
+.curve-left {
+  left: -10%;  /* Shift slightly left */
+  transform: scale(1.2); /* Optional zoom */
+  transform-origin: top left;
+}
+
+.curve-right {
+  right: -10%;  /* Shift slightly right */
+  transform: scale(1.2); /* Optional zoom */
+  transform-origin: top right;
+}
+.table th, .table td {
+      vertical-align: middle;
+      text-align: center;
+    }
+    .bg-crayond {
+      background-color: #e8f5e9;
+    }
+    .highlight-crayond {
+      background-color: #c8e6c9;
+      font-weight: bold;
     }
